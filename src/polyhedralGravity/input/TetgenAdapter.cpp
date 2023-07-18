@@ -115,7 +115,7 @@ namespace polyhedralGravity {
                             "Converting tetgen's trifaces to C++ Polyhedron");
         _faces.clear();
         _faces.reserve(_tetgenio.numberoftrifaces);
-        for (size_t i = 0; i < _tetgenio.numberoftrifaces * 3; i += 3) {
+        for (int i = 0; i < _tetgenio.numberoftrifaces * 3; i += 3) {
             _faces.push_back({static_cast<size_t>(_tetgenio.trifacelist[i]),
                               static_cast<size_t>(_tetgenio.trifacelist[i + 1]),
                               static_cast<size_t>(_tetgenio.trifacelist[i + 2])});
