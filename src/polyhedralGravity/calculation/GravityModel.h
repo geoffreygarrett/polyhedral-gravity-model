@@ -1,23 +1,23 @@
 #pragma once
 
-#include <utility>
-#include <array>
-#include <vector>
-#include <algorithm>
-#include "polyhedralGravity/model/Polyhedron.h"
 #include "polyhedralGravity/model/GravityModelData.h"
+#include "polyhedralGravity/model/Polyhedron.h"
+#include "polyhedralGravity/output/Logging.h"
 #include "polyhedralGravity/util/UtilityConstants.h"
 #include "polyhedralGravity/util/UtilityContainer.h"
-#include "spdlog/spdlog.h"
-#include "thrust/iterator/zip_iterator.h"
-#include "thrust/iterator/transform_iterator.h"
-#include "thrust/iterator/counting_iterator.h"
-#include "thrust/transform.h"
-#include "thrust/transform_reduce.h"
-#include "thrust/execution_policy.h"
 #include "polyhedralGravity/util/UtilityThrust.h"
-#include "polyhedralGravity/output/Logging.h"
-#include "xsimd/xsimd.hpp"
+#include <algorithm>
+#include <array>
+#include <spdlog/spdlog.h>
+#include <thrust/execution_policy.h>
+#include <thrust/iterator/counting_iterator.h>
+#include <thrust/iterator/transform_iterator.h>
+#include <thrust/iterator/zip_iterator.h>
+#include <thrust/transform.h>
+#include <thrust/transform_reduce.h>
+#include <utility>
+#include <vector>
+#include <xsimd/xsimd.hpp>
 
 namespace polyhedralGravity {
 

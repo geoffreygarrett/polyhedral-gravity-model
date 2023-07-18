@@ -1,7 +1,7 @@
 #pragma once
 
 #include <utility>
-#include "thrust/iterator/zip_iterator.h"
+#include <thrust/iterator/zip_iterator.h>
 
 namespace polyhedralGravity::util {
 
